@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@include font-face( Montserrat, '~/assets/font/montserrat/Montserrat-Regular', 400, normal, otf);
