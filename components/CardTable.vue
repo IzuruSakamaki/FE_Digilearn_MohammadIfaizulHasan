@@ -44,23 +44,28 @@
         </tr>
       </tbody>
     </table>
-    <!-- <img class="h-full my-auto" src="/img/navicon/search.png" alt="Search..">
-    <div class="flex gap-5 text-end">
-      <div class="my-auto relative">
-        <img class="h-full" src="/img/navicon/notification.png" alt="Notification">
-        <div class="bg-nav-red w-4 h-4 rounded-full -right-1.5 -top-1.5 absolute">
-          <p class="text-xs text-center text-white">{{ notification }}</p>
+    <div class="flex py-4 px-6 justify-between">
+      <div class="flex">
+        <p class="my-auto text-nav-blue text-sm">
+          Showing 1 to<span class="bg-slate-200 text-nav-black py-1 px-3 mx-1 font-medium rounded-md">
+            10
+          </span>of 100 entries
+        </p>
+      </div>
+      <div class="flex items-center">
+        <button class="rounded-full w-8 h-8 bg-menu-red text-nav-red">
+          &lt;
+        </button>
+        <div class="rounded-full mx-2 px-3 w-fit h-8 bg-menu-red text-nav-red relative">
+          <button :class="page === 4 ? 'rounded-full bg-nav-red w-8 h-8 text-white px-2 font-medium' : 'px-2'" v-for="page in 7" :key="page">
+            <span class="">{{ page }}</span>
+          </button>
         </div>
+        <button class="rounded-full w-8 h-8 bg-menu-red text-nav-red font-medium">
+          >
+        </button>
       </div>
-      <div class="ml-10">
-        <p class="text-nav-black">John Doe</p>
-        <p class="text-nav-blue">Admin</p>
-      </div>
-      <div class="my-auto relative">
-        <img class="h-full" src="/img/navicon/person.png" alt="John Doe">
-        <div class="bg-mode-active w-2 h-2 rounded-full ring-2 ring-white right-0 bottom-0.5 absolute"></div>
-      </div>
-    </div> -->
+    </div>
   </div>
 </template>
 

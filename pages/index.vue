@@ -1,10 +1,10 @@
 <template>
   <div class="bg-gray-100 flex tracking-wide">
     <LeftMenu />
-    <div class="w-full m-6">
-      <NavigationBar class="mb-5" />
-      <BreadCrumbs class="mb-5" />
-      <CardTable class="mb-5" />
+    <div class="w-full mx-6 mt-6">
+      <NavigationBar class="mb-4" />
+      <BreadCrumbs class="mb-4" />
+      <CardTable />
     </div>
   </div>
 </template>
